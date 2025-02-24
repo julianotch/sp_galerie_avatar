@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie d'images</title>
+    <style>
+      /* Style pour le corps de la page */
+      body {
+        font-family: Arial, sans-serif; /* Police d'écriture principale */
+        background-color: #f0f0f0;
+      }
+
+      /* Style pour le titre */
+      h1 {
+        text-align: center; /* Centrer le texte */
+        color: red; /* Couleur rouge pour le titre */
+      }
+
+      /* Style pour la galerie d'avatars */
+      .avatar-galeri {
+        display: flex; /* Affichage en flexbox pour aligner les éléments en ligne */
+        height: 20rem; /* Hauteur fixe de la galerie */
+        gap: 1rem; /* Espace entre les éléments */
+        margin: 2rem 1rem; /* Marges extérieures */
+      }
+
+      /* Style pour chaque avatar */
+      .avatar-galeri > div {
+        flex: 1; /* Chaque avatar prend une portion égale de l'espace */
+        border-radius: 1rem; /* Coins arrondis */
+        background-position: center; /* Centrer l'image de fond */
+        transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4); /* Animation fluide pour les transitions */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet de profondeur */
+      }
+
+      /* Style pour l'effet au survol des avatars */
+      .avatar-galeri > div:hover {
+        flex: 15; /* L'avatar survolé prend plus d'espace */
+        transform: scale(1.1, 1.1); /* Agrandissement de l'avatar */
+        z-index: 10; /* Mettre l'avatar au-dessus des autres */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galerie d'images</h1>
+    <div class="avatar-galeri">
+        <div style="background-image: url('img/avatar.png');" title="Avatar normal"></div>
+        <div style="background-image: url('img/avatar_coeur.png');" title="Avatar avec cœur"></div>
+        <div style="background-image: url('img/avatar_etoile.png');" title="Avatar avec étoile"></div>
+        <div style="background-image: url('img/avatar_goat.png');" title="Avatar GOAT"></div>
+        <div style="background-image: url('img/avatar_pleure.png');" title="Avatar en pleurs"></div>
+        <div style="background-image: url('img/avatar_rage.png');" title="Avatar en colère"></div>
+        <div style="background-image: url('img/avatar_triste.png');" title="Avatar triste"></div>
+        <div style="background-image: url('img/avatar_vomie.png');" title="Avatar vomi"></div>
+        <div style="background-image: url('img/avatar_wesh.png');" title="Avatar Wesh"></div>
+        <div style="background-image: url('img/avatar_wojack.png');" title="Avatar Wojack"></div>            
+    </div>
+  </body>
+</html>
